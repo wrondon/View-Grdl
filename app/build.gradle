@@ -5,6 +5,7 @@ plugins {
     id 'kotlin-kapt'
     id 'com.google.devtools.ksp' version '1.8.0-1.0.8'
     id 'dagger.hilt.android.plugin'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.8.10'
 }
 
 android {
@@ -53,6 +54,7 @@ dependencies {
 
     implementation 'com.google.devtools.ksp:symbol-processing-api:1.8.20-Beta-1.0.9'
     kapt "com.google.dagger:hilt-compiler:2.44.2"
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
 
     implementation 'androidx.activity:activity-compose:1.6.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
