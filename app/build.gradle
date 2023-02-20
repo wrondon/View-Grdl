@@ -152,7 +152,7 @@ dependencies {
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
     // ViewModel utilities for Compose
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-beta01"
     // LiveData
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-beta01"
     // Lifecycles only (without ViewModel or LiveData)
@@ -167,13 +167,13 @@ dependencies {
 /////////////////////    implementation "androidx.lifecycle:lifecycle-common-java8:2.6.0-alpha05"
 
     // optional - helpers for implementing LifecycleOwner in a Service
-    implementation "androidx.lifecycle:lifecycle-service:2.6.0-alpha05"
+    implementation "androidx.lifecycle:lifecycle-service:2.6.0-beta01"
 
     // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
-    implementation "androidx.lifecycle:lifecycle-process:2.6.0-alpha05"
+    implementation "androidx.lifecycle:lifecycle-process:2.6.0-beta01"
 
     // optional - ReactiveStreams support for LiveData
-    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.6.0-alpha05"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.6.0-beta01"
 
     // optional - Test helpers for LiveData
     testImplementation "androidx.arch.core:core-testing:$arch_version"
@@ -240,4 +240,10 @@ dependencies {
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
     implementation 'io.reactivex.rxjava3:rxjava:3.1.6'
     implementation "io.reactivex.rxjava3:rxkotlin:3.0.1"
+
+    implementation 'io.ktor:ktor-client-core:2.2.3'
+    implementation 'io.ktor:ktor-client-cio:2.2.3'
+    implementation 'io.ktor:ktor-client-content-negotiation:2.2.3'
+    implementation 'io.ktor:ktor-serialization-kotlinx-json:2.2.3'
+    implementation 'io.ktor:ktor-serialization-gson:2.2.3'
 }
