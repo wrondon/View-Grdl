@@ -152,9 +152,9 @@ dependencies {
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
     // ViewModel utilities for Compose
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-beta01"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-rc01"
     // LiveData
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-beta01"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-rc01"
     // Lifecycles only (without ViewModel or LiveData)
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
 
@@ -167,16 +167,16 @@ dependencies {
 /////////////////////    implementation "androidx.lifecycle:lifecycle-common-java8:2.6.0-alpha05"
 
     // optional - helpers for implementing LifecycleOwner in a Service
-    implementation "androidx.lifecycle:lifecycle-service:2.6.0-beta01"
+    implementation "androidx.lifecycle:lifecycle-service:2.6.0-rc01"
 
     // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
-    implementation "androidx.lifecycle:lifecycle-process:2.6.0-beta01"
+    implementation "androidx.lifecycle:lifecycle-process:2.6.0-rc01"
 
     // optional - ReactiveStreams support for LiveData
-    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.6.0-beta01"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.6.0-rc01"
 
     // optional - Test helpers for LiveData
-    testImplementation "androidx.arch.core:core-testing:$arch_version"
+    testImplementation "androidx.arch.core:core-testing:2.2.0"
 
     ////// COROUTINES
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
