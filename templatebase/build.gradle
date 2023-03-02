@@ -5,6 +5,7 @@ plugins {
     id 'kotlin-kapt'
     id 'com.google.devtools.ksp' version '1.8.10-1.0.9'
     id 'dagger.hilt.android.plugin'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.8.10'
 }
 
 android {
@@ -105,7 +106,7 @@ dependencies {
     implementation 'androidx.compose.runtime:runtime-rxjava2'
 
     implementation 'com.google.devtools.ksp:symbol-processing-api:1.8.20-Beta-1.0.9'
-    kapt "com.google.dagger:hilt-compiler:2.44.2"
+    kapt "com.google.dagger:hilt-compiler:2.45"
 
     ////// NAVIGATION - ALL (VIEWS, etc)
     def nav_version = "2.5.3"
@@ -131,8 +132,8 @@ dependencies {
     api "androidx.navigation:navigation-fragment-ktx:$nav_version"
 
     ////// HILT-DAGGER
-    implementation "com.google.dagger:hilt-android:2.44.2"
-    ksp "com.google.dagger:hilt-compiler:2.44.2"
+    implementation "com.google.dagger:hilt-android:2.45"
+    ksp "com.google.dagger:hilt-compiler:2.45"
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
 
     ////// ROOM
@@ -164,9 +165,9 @@ dependencies {
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
     // ViewModel utilities for Compose
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-rc01"
     // LiveData
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-beta01"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-rc01"
     // Lifecycles only (without ViewModel or LiveData)
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
 
@@ -179,16 +180,16 @@ dependencies {
     ///////implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
 
     // optional - helpers for implementing LifecycleOwner in a Service
-    implementation "androidx.lifecycle:lifecycle-service:2.6.0-alpha05"
+    implementation "androidx.lifecycle:lifecycle-service:2.6.0-rc01"
 
     // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
-    implementation "androidx.lifecycle:lifecycle-process:2.6.0-alpha05"
+    implementation "androidx.lifecycle:lifecycle-process:2.6.0-rc01"
 
     // optional - ReactiveStreams support for LiveData
-    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.6.0-alpha05"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.6.0-rc01"
 
     // optional - Test helpers for LiveData
-    testImplementation "androidx.arch.core:core-testing:$arch_version"
+    testImplementation "androidx.arch.core:core-testing:2.2.0"
 
     ////// COROUTINES
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
@@ -252,6 +253,14 @@ dependencies {
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
     implementation 'io.reactivex.rxjava3:rxjava:3.1.6'
     implementation "io.reactivex.rxjava3:rxkotlin:3.0.1"
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
+
+    implementation 'io.ktor:ktor-client-core:2.2.3'
+    implementation 'io.ktor:ktor-client-cio:2.2.3'
+    implementation 'io.ktor:ktor-client-content-negotiation:2.2.3'
+    implementation 'io.ktor:ktor-serialization-kotlinx-json:2.2.3'
+    implementation 'io.ktor:ktor-serialization-gson:2.2.3'
 
 
 }
