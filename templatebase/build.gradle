@@ -10,12 +10,12 @@ plugins {
 
 android {
     namespace 'com.example.apptemplatebase'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.apptemplatebase"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -59,8 +59,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:21.0.1'
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
 
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
 
     def composeBom = platform('androidx.compose:compose-bom:2022.12.00')
     implementation composeBom
@@ -97,19 +97,19 @@ dependencies {
     implementation "androidx.compose.foundation:foundation"
 
     // Optional - Integration with activities
-    implementation 'androidx.activity:activity-compose:1.6.1'
+    implementation 'androidx.activity:activity-compose:1.7.2'
     // Optional - Integration with ViewModels
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1'
     // Optional - Integration with LiveData
     implementation 'androidx.compose.runtime:runtime-livedata'
     // Optional - Integration with RxJava
     implementation 'androidx.compose.runtime:runtime-rxjava2'
 
-    implementation 'com.google.devtools.ksp:symbol-processing-api:1.8.20-Beta-1.0.9'
-    kapt "com.google.dagger:hilt-compiler:2.45"
+    implementation 'com.google.devtools.ksp:symbol-processing-api:1.9.0-1.0.11'
+    ksp "com.google.dagger:hilt-compiler:2.47"
 
     ////// NAVIGATION - ALL (VIEWS, etc)
-    def nav_version = "2.5.3"
+    def nav_version = "2.6.0"
 
     // Java language implementation
     implementation "androidx.navigation:navigation-fragment:$nav_version"
@@ -132,12 +132,12 @@ dependencies {
     api "androidx.navigation:navigation-fragment-ktx:$nav_version"
 
     ////// HILT-DAGGER
-    implementation "com.google.dagger:hilt-android:2.45"
-    ksp "com.google.dagger:hilt-compiler:2.45"
+    implementation "com.google.dagger:hilt-android:2.47"
+    ksp "com.google.dagger:hilt-compiler:2.47"
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
 
     ////// ROOM
-    def room_version = "2.5.0"
+    def room_version = "2.5.2"
 
     implementation "androidx.room:room-runtime:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
@@ -156,23 +156,23 @@ dependencies {
     testImplementation "androidx.room:room-testing:$room_version"
 
     // optional - Paging 3 Integration
-    implementation "androidx.room:room-paging:2.5.0"
+    implementation "androidx.room:room-paging:2.5.2"
 
     ////// LIFECYCLE-VIEW-MODEL-LIVEDATA
     def lifecycle_version = "2.6.0-alpha05"
     def arch_version = "2.1.0"
 
     // ViewModel
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
     // ViewModel utilities for Compose
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0-alpha01"
     // LiveData
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.7.0-alpha01"
     // Lifecycles only (without ViewModel or LiveData)
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.1"
 
     // Saved state module for ViewModel
-    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1"
 
     // Annotation processor
     ////kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
@@ -180,22 +180,22 @@ dependencies {
     ///////implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
 
     // optional - helpers for implementing LifecycleOwner in a Service
-    implementation "androidx.lifecycle:lifecycle-service:2.6.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-service:2.7.0-alpha01"
 
     // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
-    implementation "androidx.lifecycle:lifecycle-process:2.6.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-process:2.7.0-alpha01"
 
     // optional - ReactiveStreams support for LiveData
-    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.6.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.7.0-alpha01"
 
     // optional - Test helpers for LiveData
     testImplementation "androidx.arch.core:core-testing:2.2.0"
 
     ////// COROUTINES
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
 
     //////SPLASHSCREEN
-    implementation 'androidx.core:core-splashscreen:1.0.0'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
 
     implementation "com.google.code.gson:gson:2.10.1"
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"
@@ -204,7 +204,7 @@ dependencies {
     ////////////-------------------------
     //// External Libraries
     implementation 'com.google.code.gson:gson:2.10.1'
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
     // Skip this if you don't want to use integration libraries or configure Glide.
     /////////////////annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
@@ -254,7 +254,7 @@ dependencies {
     implementation 'io.reactivex.rxjava3:rxjava:3.1.6'
     implementation "io.reactivex.rxjava3:rxkotlin:3.0.1"
 
-    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1'
 
     implementation 'io.ktor:ktor-client-core:2.2.3'
     implementation 'io.ktor:ktor-client-cio:2.2.3'
