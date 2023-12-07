@@ -41,14 +41,14 @@ dependencies {
 
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     /// Dec, 2022
-    implementation "androidx.recyclerview:recyclerview:1.3.1"
+    implementation "androidx.recyclerview:recyclerview:1.3.2"
     // For control over item selection of both touch and mouse driven selection
 
 
@@ -56,9 +56,9 @@ dependencies {
     ksp "com.google.dagger:hilt-compiler:2.48"
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1'
 
-    implementation 'androidx.activity:activity-compose:1.7.2'
+    implementation 'androidx.activity:activity-compose:1.8.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     implementation 'androidx.core:core-ktx:1.12.0'
@@ -74,29 +74,29 @@ dependencies {
 
     ////// COMPOSE ToolKit.
    // def compose_version = "1.3.1"
-    implementation "androidx.compose.ui:ui:1.5.1"
+    implementation "androidx.compose.ui:ui:1.5.4"
     // Tooling support (Previews, etc.)
-    implementation "androidx.compose.ui:ui-tooling:1.5.1"
+    implementation "androidx.compose.ui:ui-tooling:1.5.4"
     // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
-    implementation "androidx.compose.foundation:foundation:1.5.1"
+    implementation "androidx.compose.foundation:foundation:1.5.4"
     // Material Design
-    implementation "androidx.compose.material:material:1.5.1"
+    implementation "androidx.compose.material:material:1.5.4"
     // Material design icons
-    implementation "androidx.compose.material:material-icons-core:1.5.1"
-    implementation "androidx.compose.material:material-icons-extended:1.5.1"
+    implementation "androidx.compose.material:material-icons-core:1.5.4"
+    implementation "androidx.compose.material:material-icons-extended:1.5.4"
     // Integration with activities
-    implementation 'androidx.activity:activity-compose:1.7.2'
+    implementation 'androidx.activity:activity-compose:1.8.1'
     // Integration with ViewModels
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0-alpha02'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0-rc01'
     // Integration with observables
-    implementation "androidx.compose.runtime:runtime-livedata:1.5.1"
-    implementation "androidx.compose.runtime:runtime-rxjava2:1.5.1"
+    implementation "androidx.compose.runtime:runtime-livedata:1.5.4"
+    implementation "androidx.compose.runtime:runtime-rxjava2:1.5.4"
 
     // UI Tests
-    androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.5.1'
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.5.4'
 
     ////// NAVIGATION - ALL (VIEWS, etc)
-    def nav_version = "2.7.2"
+    def nav_version = "2.7.5"
 
     // Java language implementation
     implementation "androidx.navigation:navigation-fragment:$nav_version"
@@ -121,10 +121,10 @@ dependencies {
     ////// HILT-DAGGER
     implementation "com.google.dagger:hilt-android:2.48"
     ksp "com.google.dagger:hilt-compiler:2.48"
-    implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
+    implementation 'androidx.hilt:hilt-navigation-compose:1.1.0'
 
     ////// ROOM
-    def room_version = "2.5.2"
+    def room_version = "2.6.1"
 
     implementation "androidx.room:room-runtime:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
@@ -152,9 +152,9 @@ dependencies {
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2"
     // ViewModel utilities for Compose
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0-alpha02"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0-rc01"
     // LiveData
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.7.0-alpha02"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.7.0-rc01"
     // Lifecycles only (without ViewModel or LiveData)
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.2"
 
@@ -167,13 +167,13 @@ dependencies {
 /////////////////////    implementation "androidx.lifecycle:lifecycle-common-java8:2.6.0-alpha05"
 
     // optional - helpers for implementing LifecycleOwner in a Service
-    implementation "androidx.lifecycle:lifecycle-service:2.7.0-alpha02"
+    implementation "androidx.lifecycle:lifecycle-service:2.7.0-rc01"
 
     // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
-    implementation "androidx.lifecycle:lifecycle-process:2.7.0-alpha02"
+    implementation "androidx.lifecycle:lifecycle-process:2.7.0-rc01"
 
     // optional - ReactiveStreams support for LiveData
-    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.7.0-alpha02"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:2.7.0-rc01"
 
     // optional - Test helpers for LiveData
     testImplementation "androidx.arch.core:core-testing:2.2.0"
